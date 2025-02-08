@@ -67,7 +67,7 @@
 				<div class="col-lg-6 col-12">
 					<div class="banner__content wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".5s">
 						<div class="banner__title">
-							<h2>Find your true love</h2>
+							<h2>Find your true1 love</h2>
 							<p>Serious dating with your perfect match is just a click away.</p>
 						</div>
 						<div class="banner__form">

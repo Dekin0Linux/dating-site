@@ -30,14 +30,6 @@ if(isset($_POST['register'])){
     $fileType = pathinfo($imageName,PATHINFO_EXTENSION);
     $fileType2 = pathinfo($imageName2,PATHINFO_EXTENSION);
 
-    // for( $i = 0; $i < count($imageName); $i++){
-    //     $fname = $imageName[$i];
-    //     $sql = "INSERT INTO images (image_name) value('$fname')";
-    //     $run_query = mysqli_query($conn,$sql) or die($conn);
-    //     if($run_query){
-    //         echo 'Files Uploaded';
-    //     }
-    // }
 
     if(in_array($fileType,$allowTypes) || in_array($fileType2,$allowTypes)){
         if(move_uploaded_file($tempLoc,$uploadFile) || move_uploaded_file($tempLoc,$uploadFile2)){

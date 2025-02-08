@@ -3,7 +3,6 @@ include './db/db.php';
 
 if(isset($_GET['edit_id'])){
     $editId = $_GET['edit_id'];
-
     $get_all = " SELECT * FROM user WHERE id = '$editId' ";
     $query = mysqli_query($conn, $get_all) or die($conn);
     while($data = mysqli_fetch_assoc($query)){
@@ -46,9 +45,6 @@ if(isset($_GET['edit_id'])){
         $uploadFile = $uploadDir . $imageName;
         $uploadFile2 = $uploadDir . $imageName2;
 
-        echo '$imageName';
-        echo '$imageName2';
-        
         // $fileType = pathinfo($imageName,PATHINFO_EXTENSION);
 
         //image1
@@ -257,18 +253,7 @@ if(isset($_GET['edit_id'])){
 	<script src="assets/js/main.js"></script>
 
 
-	<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-	<script>
-		window.ga = function () {
-			ga.q.push(arguments)
-		};
-		ga.q = [];
-		ga.l = +new Date;
-		ga('create', 'UA-XXXXX-Y', 'auto');
-		ga('set', 'anonymizeIp', true);
-		ga('set', 'transport', 'beacon');
-		ga('send', 'pageview')
-	</script>
+	
 	<script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 </html>
